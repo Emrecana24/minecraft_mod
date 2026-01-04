@@ -1,4 +1,4 @@
-package com.example;
+package com.emrecan;
 
 import net.fabricmc.api.ModInitializer;
 
