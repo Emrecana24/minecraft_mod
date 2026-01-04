@@ -3,9 +3,9 @@
 	"id": "emrecan",
 	"version": "${version}",
 	"name": "Emrecan Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Emrecanin Modu",
 	"authors": [
-		"Me!"
+		"Emrecan Nergiz"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
