@@ -19,7 +19,7 @@
 			"com.emrecan.ExampleMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.emrecan.ExampleModClient"
 		]
 	},
 	
