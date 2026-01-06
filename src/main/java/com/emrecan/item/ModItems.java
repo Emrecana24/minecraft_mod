@@ -1,7 +1,9 @@
 package com.emrecan.item;
 
 import com.emrecan.ExampleMod;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -11,7 +13,8 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     // 🍋 Limon item'ı
-    public static final Item LEMON = registerItem("lemon",
+    public static final Item LEMON = registerItem(
+            "lemon",
             new Item.Settings()
                     .food(ModFoodComponents.LEMON)
     );
@@ -42,5 +45,9 @@ public class ModItems {
      */
     public static void registerModItems() {
         ExampleMod.LOGGER.info("Registering items for " + ExampleMod.MOD_ID);
+
+        // 🍋 Limonu yaratıcı envantere ekle (Food & Drinks)
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
+                .register(entries -> entries.add(LEMON));
     }
 }
