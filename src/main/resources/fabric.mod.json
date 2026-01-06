@@ -1,18 +1,25 @@
 {
   "schemaVersion": 1,
+
   "id": "emrecan",
-  "version": "${version}",
+  "version": "1.0.0",
+
   "name": "Emrecan Mod",
-  "description": "Emrecanin Modu",
+  "description": "Fabric 1.21.11 için geliştirilmiş Emrecan modu.",
+
   "authors": [
     "Emrecan"
   ],
+
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Emercana24/minecraft_mod"
   },
+
   "license": "CC0-1.0",
+
   "icon": "assets/emrecan/icon.png",
+
   "environment": "*",
 
   "entrypoints": {
@@ -21,9 +28,6 @@
     ],
     "client": [
       "com.emrecan.ExampleModClient"
-    ],
-    "datagen": [
-      "com.emrecan.datagen.ModDataGenerator"
     ]
   },
 
@@ -32,9 +36,5 @@
     "minecraft": "~1.21.11",
     "java": ">=21",
     "fabric-api": "*"
-  },
-
-  "suggests": {
-    "another-mod": "*"
   }
 }
